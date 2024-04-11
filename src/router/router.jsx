@@ -1,8 +1,8 @@
-import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack';
-import { SignIn, SplashScreen, SignUp, AddressPage, SignUpSuccess, MainPage, ProfilePage, OrderPage } from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
 import { BottomNavigator } from '../component';
+import { AddressPage, MainPage, OrderPage, ProfilePage, DetailsPage } from '../pages';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -25,7 +25,8 @@ const Router = () => {
             <Stack.Screen name="SignUp" component={SignUp} options={{ headerShown: false }} />
             <Stack.Screen name="AddressPage" component={AddressPage} options={{ headerShown: false }} />
             <Stack.Screen name="SignUpSuccess" component={SignUpSuccess} options={{ headerShown: false }} /> */}
-            <Stack.Screen name="MainApp" component={MainApp} options={{ headerShown: false }} />
+            {/* <Stack.Screen name="MainApp" component={MainApp} options={{ headerShown: false }} /> */}
+            <Stack.Screen name="DetailsPage" component={DetailsPage} options={{ headerShown: false }} />
         </Stack.Navigator>
     )
 }

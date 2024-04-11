@@ -7,6 +7,7 @@ import MainPage from "./mainpage";
 import OrderPage from "./order";
 import ProfilePage from "./profile";
 import TabPage from "./tabpages";
+import DetailsPage from "./details";
 
 
 export {
@@ -18,5 +19,6 @@ export {
     MainPage,
     OrderPage,
     ProfilePage,
-    TabPage
+    TabPage,
+    DetailsPage
 };
